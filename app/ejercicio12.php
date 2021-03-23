@@ -7,7 +7,7 @@ de las letras del Array.
 Ejemplo: Se recibe la palabra “HOLA” y luego queda “ALOH”.
 */
 $palabra = "HOLA";
-$palabraInvertida = $palabra;
+$palabraInvertida = invertir_palabra($palabra);
 
 print("Palabra: $palabra<br>Palabra invertida: $palabraInvertida");
 
