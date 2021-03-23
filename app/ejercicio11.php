@@ -6,8 +6,8 @@ Mostrar por pantalla las primeras 4 potencias de los números del uno 1 al 4 (ha
 que las calcule invocando la función pow).
 */
 
-for($i = 0; $i < 4 ; $i++) {
-    for ($j=0; $j < 4; $j++) { 
+for($i = 1; $i < 5 ; $i++) {
+    for ($j=1; $j < 5; $j++) { 
         printf("%d^%d: %d<br>", $i, $j, pow($i,$j));
     }
 }
