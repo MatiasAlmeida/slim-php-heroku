@@ -13,12 +13,11 @@ printf("%d es par? -> %s<br>", $num, strval(esPar($num)));
 printf("%d es impar? -> %s<br>", $num, strval(esImpar($num)));
 
 function esPar($numero) {
-    $bool = var_export($numero % 2 === 0, true);
-    return $bool;
+    return var_export($numero % 2 === 0, true);
 }
 
 function esImpar($numero) {
-    return esPar($numero) === 'TRUE' ? 'FALSE' : 'TRUE';
+    return esPar($numero) === 'true' ? 'false' : 'true';
 }
 
 ?>
