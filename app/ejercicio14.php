@@ -17,7 +17,7 @@ function esPar($numero) {
 }
 
 function esImpar($numero) {
-    return esPar($numero) === 'true' ? 'false' : 'true';
+    return var_export(esPar($numero) !== 'true', true);
 }
 
 ?>
