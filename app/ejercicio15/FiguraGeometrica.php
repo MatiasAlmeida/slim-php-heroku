@@ -58,17 +58,17 @@ abstract class FiguraGeometrica
         $this->_superficie = $superficie;
     }
 
-    protected function __get($name)
+    public function __get($name)
     {
         return $this->$name;
     }
 
-    protected function __set($name, $value)
+    public function __set($name, $value)
     {
         $this->$name = $value;
     }
 
-    protected function __toString()
+    public function __toString()
     {
         return sprintf(
             'Datos del objeto:<br>Color: %s<br>Perimetro: %f<br>Superficie: %f<br>',
